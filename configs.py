@@ -30,7 +30,7 @@ Jᴜsᴛ Tʏᴘᴇ ᴀ Mᴏᴠɪᴇ Nᴀᴍᴇ 🎬**""" )
 
 ꜰᴏʀ ᴍᴏʀᴇ ɪɴꜰᴏ ᴄʟɪᴄᴋ ᴏɴ ʜᴇʟᴘ ✅""" )
     UPDATES_CHANNEL = os.getenv("UPDATES_CHANNEL", "-1001554935048")
-    DATABASE_URL = os.getenv("DATABASE_URL", "mongodb+srv://priyanshu:priyanshu@cluster0.2udjjdu.mongodb.net/?retryWrites=true&w=majority")
+    DATABASE_URL = os.getenv("DATABASE_URL", "mongodb+srv://Mdisk:Mdisk@cluster0.pwfxo1l.mongodb.net/?retryWrites=true&w=majority")
     LOG_CHANNEL = int(os.getenv("LOG_CHANNEL", "-10018264567714"))
     RESULTS_COUNT = int(os.getenv("RESULTS_COUNT", 20))
     BROADCAST_AS_COPY = os.getenv("BROADCAST_AS_COPY", "True")
