@@ -37,7 +37,7 @@ async def dbgive_access_handler(c:Client,query: CallbackQuery):
             print(e)
 
         await query.edit_message_text("Database Channel Verified. Make sure you have joined the channel")
-        return await c.send_message(from_user, f"Your channel {db_channel} has been verified. @PostSearchBot will search posts from your Database channel in your group")
+        return await c.send_message(from_user, f"Your channel {db_channel} has been verified. Pikachu Movies Bot will search posts from your Database channel in your group")
     except Exception as e:
         print(e)
 
@@ -119,7 +119,7 @@ async def button(bot, cmd: CallbackQuery):
             ], 
                                         [
                         InlineKeyboardButton("How To Watch?", callback_data="Watch_msg"),
-                        InlineKeyboardButton('Support', url='http://t.me/messagecontactbot')
+                        InlineKeyboardButton('Support', url='http://t.me/Lets_Make_History')
                     ]
                 ]
             ),
