@@ -176,7 +176,7 @@ class AsyncIter:
         
 # async def get_mdisk(link, api=Config.MDISK_API):
 async def get_mdisk(link, api=Config.MDISK_API):
-	url = 'https://diskuploader.mypowerdisk.com/v1/tp/cp'
+	url = 'https://mdiskshortner.link'
 	param = {'token': api, 'link': link
 			 }
 	res = requests.post(url, json=param)
@@ -188,7 +188,7 @@ async def get_mdisk(link, api=Config.MDISK_API):
 	return link
 
 async def replace_mdisk_link(text, api=Config.MDISK_API):
-    links = re.findall(r'https?://mdisk.me[^\s]+', text)
+    links = re.findall(r'https?://Mdiskshortner.link[^\s]+', text)
     async for link in AsyncIter(links):
         mdisk_link = await get_mdisk(link, api)
         text = text.replace(link, mdisk_link)
