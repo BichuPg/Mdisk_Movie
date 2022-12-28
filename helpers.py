@@ -176,7 +176,7 @@ class AsyncIter:
         
 # async def get_mdisk(link, api=Config.MDISK_API):
 async def get_mdisk(link, api=Config.MDISK_API):
-	url = 'https://mdiskshortner.link'
+	url = 'https://mdiskshortner.link/v1/tp/cp'
 	param = {'token': api, 'link': link
 			 }
 	res = requests.post(url, json=param)
